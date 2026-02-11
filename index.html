@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel ViewSonic Viewboard IFP7533 - Manual de Instalaci&oacute;n y Configuraci&oacute;n</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Manual T&eacute;cnico</div>
+      <h1>Panel ViewSonic<br><span>Viewboard IFP7533</span></h1>
+      <p class="hero-subtitle">Manual de Instalaci&oacute;n y Configuraci&oacute;n</p>
+      <p class="hero-description">
+        Este documento unifica todos los pasos t&eacute;cnicos necesarios para la puesta en marcha de los paneles
+        interactivos digitales (Sistema Android), incluyendo actualizaci&oacute;n de firmware, conexi&oacute;n a la red
+        corporativa y activaci&oacute;n de la tienda de aplicaciones.
+      </p>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="container">
+      <h2>Contenido</h2>
+      <div class="toc-grid">
+        <a href="#firmware" class="toc-card">
+          <span class="toc-number">1</span>
+          <div>
+            <h3>Instalaci&oacute;n del Firmware</h3>
+            <p>Requisitos y pasos para instalar el firmware</p>
+          </div>
+        </a>
+        <a href="#wifi" class="toc-card">
+          <span class="toc-number">2</span>
+          <div>
+            <h3>Configuraci&oacute;n del WiFi</h3>
+            <p>Certificado e instalaci&oacute;n de red inal&aacute;mbrica</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- SECCION 1: FIRMWARE -->
+    <section id="firmware" class="section">
+      <div class="section-header">
+        <span class="section-number">1</span>
+        <h2>Instalaci&oacute;n del Firmware</h2>
+      </div>
+
+      <div class="info-box">
+        <p>
+          El firmware publicado en esta p&aacute;gina es la versi&oacute;n <strong>20250703</strong>. Es el que viene
+          instalado por defecto en todos los paneles cuando se ponen en funcionamiento en los centros. Por tanto,
+          <strong>solo debe utilizarse en caso de que el panel quede INUTILIZADO</strong> y no sea posible realizar
+          ninguna acci&oacute;n con &eacute;l.
+        </p>
+      </div>
+
+      <h3 id="requisitos">Requisitos</h3>
+      <ul class="check-list">
+        <li>
+          <strong>Pendrive USB</strong> con el firmware (descomprimir el contenido del archivo y volcar todos los
+          archivos y carpetas en el pendrive).
+          <a href="https://drive.google.com/file/d/1Z1zDFVkwFu-v8K47-2216FWqG73ijd8e/view?usp=sharing"
+             target="_blank" rel="noopener">Enlace al firmware</a>
+        </li>
+        <li>
+          El panel debe estar <strong>apagado inicialmente</strong> (bot&oacute;n POWER de la zona inferior junto al
+          cable de corriente).
+        </li>
+      </ul>
+
+      <h3 id="pasos-firmware">Pasos</h3>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              Insertamos el pendrive en el <strong>USB de la parte lateral derecha</strong> de la pantalla. Solo es
+              v&aacute;lida esta entrada de USB, debajo de las entradas HDMI como se indica en la imagen.
+            </p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Con el USB insertado, pulsaremos el bot&oacute;n de <strong>POWER ON</strong> e inmediatamente dejamos
+              pulsado el <strong>bot&oacute;n de encendido</strong> situado en el frontal, esquina inferior derecha de la
+              pantalla. Dejaremos pulsado hasta que quede parpadeando el LED con <strong>luz blanca y roja de forma
+              secuencial</strong> y soltaremos el bot&oacute;n.
+            </p>
+            <p>
+              Tras una secuencia de parpadeo con la pantalla apagada (en negro), se iniciar&aacute; un proceso de
+              carga/instalaci&oacute;n con una barra indicadora del progreso (dicha barra tarda en aparecer, no te
+              preocupes). Este proceso dura unos <strong>6 minutos</strong> aproximadamente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Configuraci&oacute;n inicial tras la instalaci&oacute;n</h3>
+      <p>La primera vez que se encienda el panel Viewboard, se iniciar&aacute; un asistente de configuraci&oacute;n inicial:</p>
+
+      <div class="config-flow">
+        <div class="config-step">Espa&ntilde;ol</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">DHCP</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Formato 24h</div>
+      </div>
+      <div class="config-flow">
+        <div class="config-step">Modo Normal</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Ahorro Energ&iacute;a ECO</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Aceptar</div>
+      </div>
+
+      <div class="warning-box">
+        <h4>IMPORTANTE</h4>
+        <p>
+          El modo ECO es el predeterminado en todos los paneles ViewSonic, pero tiene un <strong>rendimiento inferior al
+          modo RENDIMIENTO</strong>. Debes decidir en este paso qu&eacute; modo utilizar, ya que aunque el sistema
+          indique que podr&aacute;s cambiarlo despu&eacute;s en la configuraci&oacute;n, <strong>esta opci&oacute;n no
+          aparece</strong> y solo podr&aacute;s modificarlo volviendo a flashear el firmware.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCION 2: WIFI -->
+    <section id="wifi" class="section">
+      <div class="section-header">
+        <span class="section-number">2</span>
+        <h2>Configuraci&oacute;n del WiFi</h2>
+      </div>
+
+      <h3 id="certificado">2.1 &mdash; Instalar certificado WiFi</h3>
+
+      <p>
+        Antes de la configuraci&oacute;n de la red WiFi debemos instalar el certificado
+        <strong>AC_Raiz_FNMT-RCM_SHA256</strong> que estar&aacute; en la memoria USB de la instalaci&oacute;n del
+        Firmware.
+      </p>
+
+      <div class="info-box">
+        <p>Si necesitas descargar solo el certificado puedes hacerlo en el siguiente enlace (se incluir&aacute; en la memoria USB proporcionada).</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              De forma nativa la pantalla arranca en Android. Pulsa el icono <strong>&laquo;home&raquo;</strong> de la
+              barra flotante en la parte inferior de la pantalla para llegar a la p&aacute;gina de inicio.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Accede a <strong>Configuraci&oacute;n</strong> pulsando la opci&oacute;n de <em>Aplicaciones</em> en la
+              barra de men&uacute; o en el icono de la esquina inferior izquierda.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              Navega a <strong>Sistema &rarr; Seguridad &rarr; WIFI certificado</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>
+              Inserta el pendrive en cualquiera de los dos conectores USB del frontal. Al hacer clic en
+              <strong>&laquo;instalar certificado&raquo;</strong>, se abrir&aacute; el explorador de archivos para
+              buscar la unidad y seleccionar el certificado
+              <code>AC_Raiz_FNMT-RCM_SHA256</code>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>
+              Cuando pida un nombre para el certificado, escribe: <code>andared</code>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 id="wifi-android">2.2 &mdash; Configuraci&oacute;n WiFi en Android</h3>
+      <p>
+        Accede a <strong>Configuraci&oacute;n &rarr; Configuraci&oacute;n Inal&aacute;mbrica y WiFi &rarr;
+        WiFi</strong>. Al seleccionar el SSID (<code>centro-pantalla</code>), configura las siguientes opciones:
+      </p>
+
+      <div class="config-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Par&aacute;metro</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M&eacute;todo EAP</td>
+              <td><code>PEAP</code></td>
+            </tr>
+            <tr>
+              <td>Autenticaci&oacute;n</td>
+              <td><code>GTC</code></td>
+            </tr>
+            <tr>
+              <td>Certificado de CA</td>
+              <td><code>andared</code> (el nombre que pusimos anteriormente)</td>
+            </tr>
+            <tr>
+              <td>Dominio</td>
+              <td><code>andared.junta-andalucia.es</code></td>
+            </tr>
+            <tr>
+              <td>Usuario y contrase&ntilde;a</td>
+              <td>Sala configurada en S&eacute;neca</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box">
+        <p>
+          Comprueba la conexi&oacute;n a la red WiFi navegando por Internet o verificando el icono de WiFi en la
+          esquina inferior derecha.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Panel ViewSonic Viewboard IFP7533 &mdash; Manual de Instalaci&oacute;n y Configuraci&oacute;n</p>
+    </div>
+  </footer>
+</body>
+</html>
