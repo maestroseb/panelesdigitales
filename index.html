@@ -45,6 +45,13 @@
             <p>Android, Windows y MyViewBoard &mdash; V&iacute;deo tutorial</p>
           </div>
         </a>
+        <a href="#video-arranque" class="toc-card">
+          <span class="toc-number">4</span>
+          <div>
+            <h3>Arranque autom&aacute;tico en Windows</h3>
+            <p>Audio, BIOS y configuraci&oacute;n de arranque &mdash; V&iacute;deo tutorial</p>
+          </div>
+        </a>
       </div>
     </div>
   </nav>
@@ -489,6 +496,204 @@
         <p>
           Para guardar trabajos o cargar configuraciones personales, inicia sesi&oacute;n en la app
           (<strong>Sign in</strong>) usando el c&oacute;digo QR con el m&oacute;vil.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCION 4: VIDEO TUTORIAL - ARRANQUE AUTOMATICO -->
+    <section id="video-arranque" class="section">
+      <div class="section-header">
+        <span class="section-number">4</span>
+        <h2>Arranque autom&aacute;tico en Windows</h2>
+      </div>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/t4lUoZHQweE"
+                title="Arranque autom&aacute;tico en Windows - ViewSonic ViewBoard IFP7533"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="info-box">
+        <p>
+          <strong>Resumen:</strong> Configura la pantalla para que arranque directamente en Windows, evitando el
+          sistema Android lento. Incluye mejora de audio y configuraci&oacute;n de la BIOS.
+        </p>
+      </div>
+
+      <!-- 4.1 Preparativos y Audio -->
+      <h3 id="preparativos-audio">4.1 &mdash; Preparativos y mejora del audio</h3>
+
+      <p>Antes de configurar el arranque, hay que hacer unos ajustes previos de hardware.</p>
+
+      <ul class="check-list">
+        <li>
+          <strong>Teclado f&iacute;sico:</strong> Conecta un teclado (USB o inal&aacute;mbrico) a la pantalla. Es
+          necesario para acceder a la BIOS en los pasos siguientes.
+        </li>
+      </ul>
+
+      <h4>Ajuste de audio</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>Entra en <strong>Men&uacute; &rarr; Audio</strong>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              El volumen por defecto es muy bajo. Cambia el modo de sonido a <code>Class</code> (Clase) y
+              s&uacute;belo al <strong>100%</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              En <strong>Display</strong>, se sugiere dejar el brillo autom&aacute;tico o como est&eacute;.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4.2 Arranque automático en PC -->
+      <h3 id="arranque-pc">4.2 &mdash; Configurar el arranque autom&aacute;tico en PC</h3>
+
+      <p>
+        El objetivo es que la pantalla ignore el sistema Android y vaya directa al PC integrado al encenderse.
+      </p>
+
+      <h4>Paso 1: Cambiar la preferencia en Android</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              Ir a <strong>Todas las aplicaciones</strong> (bot&oacute;n de los cuadraditos).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Entrar en <strong>Configuraci&oacute;n &rarr; Preferencias &rarr; Arranque y cierre</strong>
+              (Startup and shutdown).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              En <strong>&laquo;Entrada de inicio predeterminada&raquo;</strong>, cambiarla a
+              <code>PC</code>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <h4>Nota</h4>
+        <p>
+          Esto hace que la pantalla seleccione la entrada de PC al encender, pero a&uacute;n falta configurar el
+          propio PC para que elija Windows (porque tienen arranque dual con Linux/Ubuntu).
+        </p>
+      </div>
+
+      <!-- 4.3 Configurar la BIOS -->
+      <h3 id="configurar-bios">4.3 &mdash; Configurar la BIOS del PC</h3>
+
+      <div class="warning-box">
+        <h4>Parte t&eacute;cnica &mdash; Se necesita teclado f&iacute;sico</h4>
+        <p>
+          Aseg&uacute;rate de tener el teclado f&iacute;sico conectado antes de iniciar este proceso.
+        </p>
+      </div>
+
+      <h4>Entrar en la BIOS</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>Selecciona la entrada <strong>PC</strong> en el men&uacute; de fuentes.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Mientras arranca el ordenador, pulsa repetidamente la tecla <code>SUPR</code>
+              (Suprimir/Delete) en el teclado f&iacute;sico.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Cambiar el orden de arranque</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              Usa las flechas del teclado para ir a la pesta&ntilde;a <strong>Boot</strong> (Arranque).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>
+              Baja hasta la opci&oacute;n <strong>&laquo;UEFI Hard Disk Drive&raquo;</strong> y pulsa Enter.
+              Ver&aacute;s que el orden de arranque tiene primero <code>Ubuntu</code> y segundo
+              <code>Windows</code>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>
+              Selecciona <strong>Windows</strong> y usa las teclas (F5/F6 o Intro y flechas, seg&uacute;n la BIOS)
+              para ponerlo en la <strong>primera posici&oacute;n</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <p>
+              Pulsa <code>F4</code> (<strong>Save &amp; Exit</strong>) y confirma con <strong>S&iacute;</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4.4 Resultado -->
+      <h3 id="resultado-arranque">4.4 &mdash; Resultado final</h3>
+
+      <p>A partir de ahora, cada vez que se encienda la pantalla:</p>
+
+      <div class="config-flow">
+        <div class="config-step">Encender pantalla</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Entrada PC autom&aacute;tica</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Arranca Windows</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Login</div>
+      </div>
+
+      <div class="info-box">
+        <p>
+          El profesor solo tendr&aacute; que <strong>deslizar hacia arriba</strong>, tocar el campo de texto para
+          sacar el teclado en pantalla (si no tiene f&iacute;sico) y escribir la contrase&ntilde;a. Sin necesidad
+          de cambiar manualmente de Android a Windows cada vez que entra en clase.
         </p>
       </div>
     </section>
