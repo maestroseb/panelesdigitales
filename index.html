@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel ViewSonic Viewboard IFP7533 - Manual de Instalaci&oacute;n y Configuraci&oacute;n</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-badge">Manual T&eacute;cnico</div>
+      <h1>Panel ViewSonic<br><span>Viewboard IFP7533</span></h1>
+      <p class="hero-subtitle">Manual de Instalaci&oacute;n y Configuraci&oacute;n</p>
+      <p class="hero-description">
+        Este documento unifica todos los pasos t&eacute;cnicos necesarios para la puesta en marcha de los paneles
+        interactivos digitales (Sistema Android), incluyendo actualizaci&oacute;n de firmware, conexi&oacute;n a la red
+        corporativa y activaci&oacute;n de la tienda de aplicaciones.
+      </p>
+      <a href="https://drive.google.com/file/d/1A0L8INsL7pwTzhfWZx7ORBg2qErsw1lk/view?usp=drive_link"
+         target="_blank" rel="noopener" class="hero-btn">Descargar gu&iacute;a en PDF</a>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="container">
+      <h2>Contenido</h2>
+      <div class="toc-grid">
+        <a href="#firmware" class="toc-card">
+          <span class="toc-number">1</span>
+          <div>
+            <h3>Instalaci&oacute;n del Firmware</h3>
+            <p>Requisitos y pasos para instalar el firmware</p>
+          </div>
+        </a>
+        <a href="#wifi" class="toc-card">
+          <span class="toc-number">2</span>
+          <div>
+            <h3>Configuraci&oacute;n del WiFi</h3>
+            <p>Certificado e instalaci&oacute;n de red inal&aacute;mbrica</p>
+          </div>
+        </a>
+        <a href="#video-uso" class="toc-card">
+          <span class="toc-number">3</span>
+          <div>
+            <h3>Gu&iacute;a de uso b&aacute;sico</h3>
+            <p>Android, Windows y MyViewBoard &mdash; V&iacute;deo tutorial</p>
+          </div>
+        </a>
+        <a href="#video-arranque" class="toc-card">
+          <span class="toc-number">4</span>
+          <div>
+            <h3>Arranque autom&aacute;tico en Windows</h3>
+            <p>Audio, BIOS y configuraci&oacute;n de arranque &mdash; V&iacute;deo tutorial</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- SECCION 1: FIRMWARE -->
+    <section id="firmware" class="section">
+      <div class="section-header">
+        <span class="section-number">1</span>
+        <h2>Instalaci&oacute;n del Firmware</h2>
+      </div>
+
+      <div class="info-box">
+        <p>
+          El firmware publicado en esta p&aacute;gina es la versi&oacute;n <strong>20250703</strong>. Es el que viene
+          instalado por defecto en todos los paneles cuando se ponen en funcionamiento en los centros. Por tanto,
+          <strong>solo debe utilizarse en caso de que el panel quede INUTILIZADO</strong> y no sea posible realizar
+          ninguna acci&oacute;n con &eacute;l.
+        </p>
+      </div>
+
+      <figure class="img-figure">
+        <img src="images/unnamed.png" alt="Versi&oacute;n del firmware 20250703 en la informaci&oacute;n del dispositivo">
+        <figcaption>Versi&oacute;n del firmware: 20250703 (N&uacute;mero de compilaci&oacute;n)</figcaption>
+      </figure>
+
+      <h3 id="requisitos">Requisitos</h3>
+      <ul class="check-list">
+        <li>
+          <strong>Pendrive USB</strong> con el firmware (descomprimir el contenido del archivo y volcar todos los
+          archivos y carpetas en el pendrive).
+          <a href="https://drive.google.com/file/d/1Z1zDFVkwFu-v8K47-2216FWqG73ijd8e/view?usp=sharing"
+             target="_blank" rel="noopener">Enlace al firmware</a>
+        </li>
+        <li>
+          El panel debe estar <strong>apagado inicialmente</strong> (bot&oacute;n POWER de la zona inferior junto al
+          cable de corriente).
+        </li>
+      </ul>
+
+      <h3 id="pasos-firmware">Pasos</h3>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              Insertamos el pendrive en el <strong>USB de la parte lateral derecha</strong> de la pantalla. Solo es
+              v&aacute;lida esta entrada de USB, debajo de las entradas HDMI como se indica en la imagen.
+            </p>
+            <figure class="img-figure">
+              <img src="images/unnamed(1).png" alt="Puerto USB lateral derecho de la pantalla">
+              <figcaption>USB lateral derecho (debajo de las entradas HDMI)</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Con el USB insertado, pulsaremos el bot&oacute;n de <strong>POWER ON</strong> e inmediatamente dejamos
+              pulsado el <strong>bot&oacute;n de encendido</strong> situado en el frontal, esquina inferior derecha de la
+              pantalla. Dejaremos pulsado hasta que quede parpadeando el LED con <strong>luz blanca y roja de forma
+              secuencial</strong> y soltaremos el bot&oacute;n.
+            </p>
+            <figure class="img-figure">
+              <img src="images/unnamed(2).png" alt="Bot&oacute;n de encendido frontal con LED rojo">
+              <figcaption>Bot&oacute;n de encendido en el frontal (esquina inferior derecha)</figcaption>
+            </figure>
+            <p>
+              Tras una secuencia de parpadeo con la pantalla apagada (en negro), se iniciar&aacute; un proceso de
+              carga/instalaci&oacute;n con una barra indicadora del progreso (dicha barra tarda en aparecer, no te
+              preocupes). Este proceso dura unos <strong>6 minutos</strong> aproximadamente.
+            </p>
+            <figure class="img-figure">
+              <img src="images/unnamed(3).png" alt="Pantalla de actualizaci&oacute;n con barra de progreso">
+              <figcaption>Proceso de actualizaci&oacute;n del firmware (Upgrading&hellip;)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <h3>Configuraci&oacute;n inicial tras la instalaci&oacute;n</h3>
+      <p>La primera vez que se encienda el panel Viewboard, se iniciar&aacute; un asistente de configuraci&oacute;n inicial:</p>
+
+      <div class="config-flow">
+        <div class="config-step">Espa&ntilde;ol</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">DHCP</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Formato 24h</div>
+      </div>
+      <div class="config-flow">
+        <div class="config-step">Modo Normal</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Ahorro Energ&iacute;a ECO</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Aceptar</div>
+      </div>
+
+      <div class="img-gallery">
+        <figure class="img-figure">
+          <img src="images/unnamed(4).png" alt="Selecci&oacute;n de idioma: Espa&ntilde;ol">
+          <figcaption>Idioma: Espa&ntilde;ol</figcaption>
+        </figure>
+        <figure class="img-figure">
+          <img src="images/unnamed(5).png" alt="Configuraci&oacute;n Ethernet: DHCP">
+          <figcaption>Red: DHCP</figcaption>
+        </figure>
+        <figure class="img-figure">
+          <img src="images/unnamed(6).png" alt="Configuraci&oacute;n de fecha y hora: formato 24h">
+          <figcaption>Fecha y hora: Formato 24h</figcaption>
+        </figure>
+        <figure class="img-figure">
+          <img src="images/unnamed(7).png" alt="Selecci&oacute;n de modo: Normal, ECO y Aceptar">
+          <figcaption>Modo Normal &rarr; ECO &rarr; Aceptar</figcaption>
+        </figure>
+      </div>
+
+      <div class="warning-box">
+        <h4>IMPORTANTE</h4>
+        <p>
+          El modo ECO es el predeterminado en todos los paneles ViewSonic, pero tiene un <strong>rendimiento inferior al
+          modo RENDIMIENTO</strong>. Debes decidir en este paso qu&eacute; modo utilizar, ya que aunque el sistema
+          indique que podr&aacute;s cambiarlo despu&eacute;s en la configuraci&oacute;n, <strong>esta opci&oacute;n no
+          aparece</strong> y solo podr&aacute;s modificarlo volviendo a flashear el firmware.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCION 2: WIFI -->
+    <section id="wifi" class="section">
+      <div class="section-header">
+        <span class="section-number">2</span>
+        <h2>Configuraci&oacute;n del WiFi</h2>
+      </div>
+
+      <h3 id="certificado">2.1 &mdash; Instalar certificado WiFi</h3>
+
+      <p>
+        Antes de la configuraci&oacute;n de la red WiFi debemos instalar el certificado
+        <strong>AC_Raiz_FNMT-RCM_SHA256</strong> que estar&aacute; en la memoria USB de la instalaci&oacute;n del
+        Firmware.
+      </p>
+
+      <div class="info-box">
+        <p>Si necesitas descargar solo el certificado puedes hacerlo en el siguiente enlace:
+          <a href="https://drive.google.com/file/d/13J-jNZKZAW9IktIkCm71Vlw-_LDlK6TW/view?usp=drive_link"
+             target="_blank" rel="noopener">Descargar certificado AC_Raiz_FNMT-RCM_SHA256</a>
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              De forma nativa la pantalla arranca en Android. Pulsa el icono <strong>&laquo;home&raquo;</strong> de la
+              barra flotante en la parte inferior de la pantalla para llegar a la p&aacute;gina de inicio.
+            </p>
+            <figure class="img-figure">
+              <img src="images/unnamed(8).png" alt="Barra inferior de Android con bot&oacute;n Home resaltado">
+              <figcaption>Barra flotante inferior &mdash; bot&oacute;n Home</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Accede a <strong>Configuraci&oacute;n</strong> pulsando la opci&oacute;n de <em>Aplicaciones</em> en la
+              barra de men&uacute; o en el icono de la esquina inferior izquierda.
+            </p>
+            <figure class="img-figure">
+              <img src="images/unnamed(9).png" alt="Todas las aplicaciones con Settings resaltado">
+              <figcaption>All Apps &rarr; Settings (Configuraci&oacute;n)</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              Navega a <strong>Sistema &rarr; Seguridad &rarr; WIFI certificado</strong>.
+            </p>
+            <figure class="img-figure">
+              <img src="images/unnamed(10).png" alt="Configuraci&oacute;n del sistema mostrando Security">
+              <figcaption>Settings &rarr; System &rarr; Security</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>
+              Inserta el pendrive en cualquiera de los dos conectores USB del frontal. Al hacer clic en
+              <strong>&laquo;instalar certificado&raquo;</strong>, se abrir&aacute; el explorador de archivos para
+              buscar la unidad y seleccionar el certificado
+              <code>AC_Raiz_FNMT-RCM_SHA256</code>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>
+              Cuando pida un nombre para el certificado, escribe: <code>andared</code>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h3 id="wifi-android">2.2 &mdash; Configuraci&oacute;n WiFi en Android</h3>
+      <p>
+        Accede a <strong>Configuraci&oacute;n &rarr; Configuraci&oacute;n Inal&aacute;mbrica y WiFi &rarr;
+        WiFi</strong>. Al seleccionar el SSID (<code>centro-pantalla</code>), configura las siguientes opciones:
+      </p>
+
+      <div class="config-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Par&aacute;metro</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>M&eacute;todo EAP</td>
+              <td><code>PEAP</code></td>
+            </tr>
+            <tr>
+              <td>Autenticaci&oacute;n</td>
+              <td><code>GTC</code></td>
+            </tr>
+            <tr>
+              <td>Certificado de CA</td>
+              <td><code>andared</code> (el nombre que pusimos anteriormente)</td>
+            </tr>
+            <tr>
+              <td>Dominio</td>
+              <td><code>andared.junta-andalucia.es</code></td>
+            </tr>
+            <tr>
+              <td>Usuario y contrase&ntilde;a</td>
+              <td>Sala configurada en S&eacute;neca</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="info-box">
+        <p>
+          Comprueba la conexi&oacute;n a la red WiFi navegando por Internet o verificando el icono de WiFi en la
+          esquina inferior derecha.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCION 3: VIDEO TUTORIAL - GUIA DE USO -->
+    <section id="video-uso" class="section">
+      <div class="section-header">
+        <span class="section-number">3</span>
+        <h2>Gu&iacute;a de uso b&aacute;sico</h2>
+      </div>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/KzZKA7UzRCU"
+                title="Gu&iacute;a de uso ViewSonic ViewBoard IFP7533"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="info-box">
+        <p>
+          <strong>Resumen:</strong> El sistema Android presenta retardo al escribir. Se recomienda cambiar a
+          <strong>Windows (OPS)</strong> para un uso fluido, y actualizar la app de pizarra
+          <strong>MyViewBoard</strong> desde la Microsoft Store.
+        </p>
+      </div>
+
+      <!-- 3.1 Entorno Android -->
+      <h3 id="entorno-android">3.1 &mdash; Primer contacto: El entorno Android</h3>
+
+      <h4>Interfaz principal</h4>
+      <ul class="feature-list">
+        <li>
+          <strong>Barra inferior</strong> con aplicaciones fijas: Archivos, Navegador (Chromium) y la Pizarra Blanca
+          (Whiteboard).
+        </li>
+        <li>
+          Bot&oacute;n <strong>&laquo;New&raquo;</strong> en la pizarra: indica si hay actualizaciones, aunque no
+          siempre es fiable.
+        </li>
+      </ul>
+
+      <div class="tip-box">
+        <h4>Truco</h4>
+        <p>
+          La barra de tareas del sistema tapa las herramientas de la pizarra. Para esconderla,
+          <strong>desliza el dedo hacia abajo</strong> sobre la barra.
+        </p>
+      </div>
+
+      <h4>Barra de herramientas (laterales)</h4>
+      <p>
+        Se despliegan pulsando las flechas en los laterales izquierdo o derecho. Herramientas disponibles:
+      </p>
+      <div class="tools-grid">
+        <div class="tool-chip">L&aacute;piz</div>
+        <div class="tool-chip">Figuras geom&eacute;tricas</div>
+        <div class="tool-chip">Cuadros de texto</div>
+        <div class="tool-chip">Notas adhesivas</div>
+        <div class="tool-chip">Navegador flotante</div>
+        <div class="tool-chip">Captura de pantalla</div>
+        <div class="tool-chip">Deshacer / Rehacer</div>
+        <div class="tool-chip">Mano (desplazar lienzo)</div>
+      </div>
+
+      <h4>Gestos b&aacute;sicos</h4>
+      <div class="config-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Gesto</th>
+              <th>Acci&oacute;n</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Escribir con la punta del dedo</td>
+              <td>Dibujar / escribir sobre la pizarra</td>
+            </tr>
+            <tr>
+              <td>Frotar con el pu&ntilde;o cerrado</td>
+              <td>Borrar (detecta el &aacute;rea grande como borrador)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="warning-box">
+        <h4>Problema conocido: Retardo (LAG)</h4>
+        <p>
+          Al escribir r&aacute;pido en Android, el trazo <strong>no sigue al dedo inmediatamente</strong> porque el
+          procesador Android de la pantalla no es muy potente. Por este motivo se recomienda cambiar a
+          <strong>Windows</strong>.
+        </p>
+      </div>
+
+      <!-- 3.2 Cambiar a Windows -->
+      <h3 id="modo-windows">3.2 &mdash; Cambiar al modo PC / Windows</h3>
+      <p>Para trabajar de forma fluida, hay que usar el ordenador integrado en la pantalla (OPS).</p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              Pulsa el bot&oacute;n de <strong>Men&uacute;</strong> (f&iacute;sico o en pantalla).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              En el men&uacute; de fuentes, desliza hacia abajo hasta encontrar la opci&oacute;n
+              <strong>Windows</strong> (suele ser la tercera opci&oacute;n).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>Espera a que arranque el PC.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>
+              Aparece la pantalla de bloqueo de Windows. Desliza hacia arriba para ver el login. Si no hay teclado
+              f&iacute;sico, toca el campo de texto para sacar el <strong>teclado virtual</strong>. Escribe usuario y
+              contrase&ntilde;a y pulsa Enter.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.3 Actualizar MyViewBoard -->
+      <h3 id="actualizar-myviewboard">3.3 &mdash; Actualizaci&oacute;n de MyViewBoard</h3>
+
+      <div class="warning-box">
+        <h4>Importante</h4>
+        <p>
+          La aplicaci&oacute;n de pizarra que viene preinstalada en Windows es una <strong>versi&oacute;n
+          antigua</strong> (v2.74). Es necesario actualizarla para obtener la misma interfaz fluida que en Android.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              <strong>No</strong> uses la web de ViewSonic para descargar. Abre la <strong>Microsoft Store</strong>
+              (Tienda de aplicaciones de Windows).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              En el buscador de la tienda, escribe: <code>MyViewBoard</code>
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              Selecciona la aplicaci&oacute;n con la etiqueta <strong>&laquo;New&raquo;</strong> (suele ser
+              &laquo;MyViewBoard Whiteboard&raquo;) y pulsa <strong>Obtener / Instalar</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>
+              <strong>Limpieza:</strong> Elimina el acceso directo de la versi&oacute;n antigua (clic derecho &rarr;
+              eliminar) para evitar confusiones.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>
+              Abre la nueva aplicaci&oacute;n y <strong>anclala a la barra de tareas</strong> (pulsaci&oacute;n larga
+              en el icono &rarr; Anclar a la barra de tareas).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3.4 Funciones avanzadas -->
+      <h3 id="funciones-windows">3.4 &mdash; Funciones avanzadas en Windows</h3>
+
+      <h4>Modo Escritorio (Windows Toggle)</h4>
+      <p>
+        Dentro de la pizarra, pulsa el icono con forma de monitor/ventanas. La pizarra se minimiza a una
+        <strong>barra flotante</strong>, permitiendo ver el escritorio, abrir navegadores, reproducir v&iacute;deos, etc.
+      </p>
+
+      <h4>Escribir sobre Windows</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              En la barra flotante, pulsa el <strong>L&aacute;piz</strong> para escribir/dibujar encima de cualquier
+              aplicaci&oacute;n (por ejemplo, rodear algo en una p&aacute;gina web).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Para hacer clic en enlaces u otros elementos, <strong>desactiva el l&aacute;piz</strong> pulsando el
+              icono del <strong>Rat&oacute;n/Cursor</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              Pulsa el icono de la <strong>pizarra</strong> en la barra flotante para volver al lienzo blanco.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Guardar y perfiles</h4>
+      <div class="info-box">
+        <p>
+          Para guardar trabajos o cargar configuraciones personales, inicia sesi&oacute;n en la app
+          (<strong>Sign in</strong>) usando el c&oacute;digo QR con el m&oacute;vil.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCION 4: VIDEO TUTORIAL - ARRANQUE AUTOMATICO -->
+    <section id="video-arranque" class="section">
+      <div class="section-header">
+        <span class="section-number">4</span>
+        <h2>Arranque autom&aacute;tico en Windows</h2>
+      </div>
+
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/t4lUoZHQweE"
+                title="Arranque autom&aacute;tico en Windows - ViewSonic ViewBoard IFP7533"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="info-box">
+        <p>
+          <strong>Resumen:</strong> Configura la pantalla para que arranque directamente en Windows, evitando el
+          sistema Android lento. Incluye mejora de audio y configuraci&oacute;n de la BIOS.
+        </p>
+      </div>
+
+      <!-- 4.1 Preparativos y Audio -->
+      <h3 id="preparativos-audio">4.1 &mdash; Preparativos y mejora del audio</h3>
+
+      <p>Antes de configurar el arranque, hay que hacer unos ajustes previos de hardware.</p>
+
+      <ul class="check-list">
+        <li>
+          <strong>Teclado f&iacute;sico:</strong> Conecta un teclado (USB o inal&aacute;mbrico) a la pantalla. Es
+          necesario para acceder a la BIOS en los pasos siguientes.
+        </li>
+      </ul>
+
+      <h4>Ajuste de audio</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>Entra en <strong>Men&uacute; &rarr; Audio</strong>.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              El volumen por defecto es muy bajo. Cambia el modo de sonido a <code>Class</code> (Clase) y
+              s&uacute;belo al <strong>100%</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              En <strong>Display</strong>, se sugiere dejar el brillo autom&aacute;tico o como est&eacute;.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4.2 Arranque automático en PC -->
+      <h3 id="arranque-pc">4.2 &mdash; Configurar el arranque autom&aacute;tico en PC</h3>
+
+      <p>
+        El objetivo es que la pantalla ignore el sistema Android y vaya directa al PC integrado al encenderse.
+      </p>
+
+      <h4>Paso 1: Cambiar la preferencia en Android</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>
+              Ir a <strong>Todas las aplicaciones</strong> (bot&oacute;n de los cuadraditos).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Entrar en <strong>Configuraci&oacute;n &rarr; Preferencias &rarr; Arranque y cierre</strong>
+              (Startup and shutdown).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              En <strong>&laquo;Entrada de inicio predeterminada&raquo;</strong>, cambiarla a
+              <code>PC</code>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        <h4>Nota</h4>
+        <p>
+          Esto hace que la pantalla seleccione la entrada de PC al encender, pero a&uacute;n falta configurar el
+          propio PC para que elija Windows (porque tienen arranque dual con Linux/Ubuntu).
+        </p>
+      </div>
+
+      <!-- 4.3 Configurar la BIOS -->
+      <h3 id="configurar-bios">4.3 &mdash; Configurar la BIOS del PC</h3>
+
+      <div class="warning-box">
+        <h4>Parte t&eacute;cnica &mdash; Se necesita teclado f&iacute;sico</h4>
+        <p>
+          Aseg&uacute;rate de tener el teclado f&iacute;sico conectado antes de iniciar este proceso.
+        </p>
+      </div>
+
+      <h4>Entrar en la BIOS</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <p>Selecciona la entrada <strong>PC</strong> en el men&uacute; de fuentes.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <p>
+              Mientras arranca el ordenador, pulsa repetidamente la tecla <code>SUPR</code>
+              (Suprimir/Delete) en el teclado f&iacute;sico.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Cambiar el orden de arranque</h4>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <p>
+              Usa las flechas del teclado para ir a la pesta&ntilde;a <strong>Boot</strong> (Arranque).
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <p>
+              Baja hasta la opci&oacute;n <strong>&laquo;UEFI Hard Disk Drive&raquo;</strong> y pulsa Enter.
+              Ver&aacute;s que el orden de arranque tiene primero <code>Ubuntu</code> y segundo
+              <code>Windows</code>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <p>
+              Selecciona <strong>Windows</strong> y usa las teclas (F5/F6 o Intro y flechas, seg&uacute;n la BIOS)
+              para ponerlo en la <strong>primera posici&oacute;n</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <p>
+              Pulsa <code>F4</code> (<strong>Save &amp; Exit</strong>) y confirma con <strong>S&iacute;</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4.4 Resultado -->
+      <h3 id="resultado-arranque">4.4 &mdash; Resultado final</h3>
+
+      <p>A partir de ahora, cada vez que se encienda la pantalla:</p>
+
+      <div class="config-flow">
+        <div class="config-step">Encender pantalla</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Entrada PC autom&aacute;tica</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Arranca Windows</div>
+        <div class="config-arrow">&rarr;</div>
+        <div class="config-step">Login</div>
+      </div>
+
+      <div class="info-box">
+        <p>
+          El profesor solo tendr&aacute; que <strong>deslizar hacia arriba</strong>, tocar el campo de texto para
+          sacar el teclado en pantalla (si no tiene f&iacute;sico) y escribir la contrase&ntilde;a. Sin necesidad
+          de cambiar manualmente de Android a Windows cada vez que entra en clase.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Panel ViewSonic Viewboard IFP7533 &mdash; Manual de Instalaci&oacute;n y Configuraci&oacute;n</p>
+    </div>
+  </footer>
+</body>
+</html>
